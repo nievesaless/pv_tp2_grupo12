@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 13 - Camila Mansilla</title>
+</head>
+<body>
+    <script>
+        const mostrararreglo = (arreglo) =>{
+            document.write("<h2>Contenido del Arreglo:</h2>");
+            arreglo.forEach((num) =>{
+                document.write(`${num}<br>`);
+             });   
+        };
+
+        const cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
+        let miArreglo = [];
+
+        for (let i = 0; i < cantidad; i++) {
+            let numero = parseFloat(prompt(`Ingrese el número ${i + 1} de ${cantidad}:`));
+            miArreglo.push(numero);
+        }
+
+        mostrararreglo(miArreglo);
+    </script>
+</body>
+</html>

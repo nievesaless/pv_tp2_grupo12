@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 14 - Duplicar Array</title>
+</head>
+<body>
+    <h1>Calculadora de Dobles</h1>
+
+    <script>
+        // Función que recibe y retorna uno nuevo multiplicado por 2
+        const duplicar = (arreglo) => arreglo.map(numero => numero * 2);
+
+        // Solicitar al usuario
+        const cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
+        const numerosIngresados = [];
+
+        // Pedimos los números
+        for (let i = 0; i < cantidad; i++) {
+            const num = parseFloat(prompt(`Ingrese el número entero ${i + 1} de ${cantidad}:`));
+            numerosIngresados.push(num);
+        }
+
+        // Llamamos a la función duplicar
+        const resultados = duplicar(numerosIngresados);
+
+        // Mostramos los resultados
+        document.write(`<h3>Números ingresados:</h3>`);
+        document.write(`<p>[ ${numerosIngresados.join(" - ")} ]</p>`);
+        
+        document.write(`<h3>El doble de cada uno:</h3>`);
+        document.write(`<p><strong>[ ${resultados.join(" - ")} ]</strong></p>`);
+    </script>
+</body>
+</html>
