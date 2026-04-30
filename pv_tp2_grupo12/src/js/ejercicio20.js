@@ -1,6 +1,9 @@
 // Logica de negocio
 
 
+
+import { servicioSalasMauricio } from "../services/serviceSalasMauricio.js";
+
 // Esperar al DOM
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -27,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // llamada al service
         guardarEstudianteEnArray(estudiante);
+        servicioSalasMauricio(estudiante);
 
         listaEstudiantes.unshift(estudiante);
 
@@ -35,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // (estudiante) => (estudiante.lu == "234") necesita return
         ));
 
-        console.log(listaEstudiantes); */
+        console.log(listaEstudiantes); 
 
         // Crear el nuevo elemento vacio
         contenedorResultado.innerHTML = '';
