@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Letras A </title>
+</head>
+<body>
+    <script>
+        // Definimos la función flecha
+        const contarLetraA = (cadena) => {
+            let contador = 0;
+            for (let i = 0; i < cadena.length; i++) {
+                if (cadena[i] === "a") {
+                    contador++;
+                }
+            }
+            return contador;
+        };
+
+        // Solicitamos el texto al usuario
+        let textoIngresado = prompt("Ingrese un texto:");
+
+        // Llamamos a la función pasándole el texto ingresado como parámetro
+        let cantidad = contarLetraA(textoIngresado);
+
+        // Mostramos el resultado dinámico mediante una alerta
+        alert(`La letra "a" aparece ${cantidad} veces en el texto ingresado.`);
+    </script>
+</body>
+</html>
