@@ -1,3 +1,4 @@
+import { serviceIgnacio } from "../service/serviceIgnacioCardozo";
 // Logica de negocio
 
 
