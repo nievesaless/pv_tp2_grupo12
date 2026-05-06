@@ -1,0 +1,38 @@
+.container {
+   max-width: 600px;
+    margin:50px auto;
+    padding: 20px;
+    font-family: arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus{
+    border-color: #007bff;
+}
+.display-box {
+    margin: 0;
+    color: #777;
+    font-size: 0.9em;
+}
+#resultado {
+    margin: 10px 0 0 0;
+    color: #007bff;
+    word-wrap: break-word;
+}
