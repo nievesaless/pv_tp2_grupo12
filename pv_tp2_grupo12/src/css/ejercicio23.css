@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#userInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#textoMostrado {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    min-height: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Esta es la clase que se añadirá dinámicamente con JS */
+.alerta-fondo {
+    background-color: #ffcccc !important; /* Rojo claro */
+}
